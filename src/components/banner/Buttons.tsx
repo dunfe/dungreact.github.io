@@ -4,9 +4,9 @@ import styled from 'styled-components'
 const Buttons = (): JSX.Element => {
     return (
         <ButtonsContainer>
-            <StyledButton>Get In Touch</StyledButton>
+            <StyledButton>Get in Touch</StyledButton>
             <StyledLink>
-                Take a tour{' '}
+                Take a Tour{' '}
                 <svg
                     height="12"
                     xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ const StyledButton = styled.button`
 
     background-color: #61dafb;
     color: #000000;
-    padding: 10px 25px;
+    padding: 15px 25px;
     white-space: nowrap;
     transition: background-color 0.2s ease-out;
     -webkit-transition: background-color 0.2s ease-out;
