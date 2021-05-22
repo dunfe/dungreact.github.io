@@ -21,7 +21,7 @@ const BannerTitle = styled.h1`
     color: #61dafb;
 `
 const BannerSubtitle = styled.p`
-    padding-top: 20px;
+    padding-top: 3px;
     font-size: 30px;
     font-weight: 200;
 

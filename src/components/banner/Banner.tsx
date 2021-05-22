@@ -17,7 +17,7 @@ const BannerContainer = styled.div`
     flex-direction: column;
     position: relative;
 
-    padding-top: 155px;
+    padding-top: 95px;
     padding-bottom: 85px;
     margin-left: auto;
     margin-right: auto;
