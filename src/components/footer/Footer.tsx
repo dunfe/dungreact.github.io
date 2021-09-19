@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Footer = (): JSX.Element => {
@@ -11,10 +12,18 @@ const Footer = (): JSX.Element => {
                         <MenuInner />
                         <MenuInner>
                             <MenuTitle>MENU</MenuTitle>
-                            <MenuLink>About</MenuLink>
-                            <MenuLink>Portfolio</MenuLink>
-                            <MenuLink>Blog</MenuLink>
-                            <MenuLink>Contact</MenuLink>
+                            <MenuLink>
+                                <Link to={'/about'}>About</Link>
+                            </MenuLink>
+                            <MenuLink>
+                                <Link to={'/portfolio'}>Portfolio</Link>
+                            </MenuLink>
+                            <MenuLink>
+                                <Link to={'/blog'}>Blog</Link>
+                            </MenuLink>
+                            <MenuLink>
+                                <Link to={'/contact'}>Contact</Link>
+                            </MenuLink>
                         </MenuInner>
                         <MenuInner>
                             <MenuTitle>CHANNELS</MenuTitle>
@@ -133,8 +142,7 @@ const Footer = (): JSX.Element => {
 const StyledFooter = styled.footer`
     background-color: #20232a;
     color: #ffffff;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    flex-shrink: 0;
 `
 const FooterContainer = styled.div`
     padding-left: 20px;
@@ -170,11 +178,11 @@ const MenuTitle = styled.div`
     text-align: start;
     letter-spacing: 0.08em;
 `
-const MenuLink = styled.a`
+export const MenuLink = styled.a`
     line-height: 2;
     text-align: left;
 `
-const StyledSvg = styled.svg`
+export const StyledSvg = styled.svg`
     vertical-align: -2px;
     display: inline-block;
     margin-left: 5px;
