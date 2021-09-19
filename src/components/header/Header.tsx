@@ -1,5 +1,6 @@
 import * as React from 'react'
 import './Header.scss'
+import { Link } from 'react-router-dom'
 
 const Header = (): JSX.Element => {
     return (
@@ -16,18 +17,18 @@ const Header = (): JSX.Element => {
                     <span className={'logo-text'}>Dũng React</span>
                 </a>
                 <nav className={'header-nav'}>
-                    <a href={'/'} className={'header-link'}>
+                    <Link to={'/about'} className={'header-link'}>
                         About
-                    </a>
-                    <a href={'/'} className={'header-link'}>
+                    </Link>
+                    <Link to={'/portfolio'} className={'header-link'}>
                         Portfolio
-                    </a>
-                    <a href={'/'} className={'header-link'}>
+                    </Link>
+                    <Link to={'/blog'} className={'header-link'}>
                         Blog
-                    </a>
-                    <a href={'/'} className={'header-link'}>
+                    </Link>
+                    <Link to={'/contact'} className={'header-link'}>
                         Contact
-                    </a>
+                    </Link>
                 </nav>
                 <form className={'header-form'}>
                     <span className={'header-search-container'}>
@@ -68,7 +69,9 @@ const Header = (): JSX.Element => {
                     </a>
                     <a
                         href={'https://github.com/dungreact'}
+                        target={'_blank'}
                         className={'header-link'}
+                        rel="noreferrer"
                     >
                         <span>Github</span>
                         <svg

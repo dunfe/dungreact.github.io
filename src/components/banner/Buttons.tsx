@@ -1,12 +1,15 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Buttons = (): JSX.Element => {
     return (
         <ButtonsContainer>
-            <StyledButton>Get in Touch</StyledButton>
+            <Link to={'/contact'}>
+                <StyledButton>Get in Touch</StyledButton>
+            </Link>
             <StyledLink>
-                Take a Tour{' '}
+                Take a Tour &nbsp;
                 <svg
                     height="12"
                     xmlns="http://www.w3.org/2000/svg"
